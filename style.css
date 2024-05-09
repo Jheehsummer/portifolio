@@ -91,13 +91,13 @@ h1 {
     font-size: 75px;
 }
 
-h1 span {
+h1, h5 span {
     color: #e2b9c6;
 }
 
 .meu-nome h3 {
     color: white;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .icones {
@@ -346,14 +346,8 @@ footer p {
     }
 
     .portfolio {
-        font-size: 25px;
+        font-size: 35px;
         letter-spacing: 2px;
-    }
-
-    .meu-nome {
-        font-size: 10px;
-        text-align: start;
-        text-align: center;
     }
 
     .segunda-secao {
@@ -394,9 +388,11 @@ footer p {
     .projetos {
         width: 100vw;
     }
+    
     .projetos h2 {
         font-size: 25px;
     }
+
     .card-projetos {
         display: flex;
         flex-direction: column;
