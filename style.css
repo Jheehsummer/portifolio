@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+    transition: 0.5s;
 }
 
 .caixa-principal {
@@ -12,6 +13,7 @@
     background-size: cover;
     background-position: center;
     background-color: #191919;
+    
 }
 
 nav {
@@ -21,6 +23,7 @@ nav {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 25px;
+  
 }
 
 .portfolio {
@@ -40,16 +43,45 @@ li {
     font-size: 25px;
     margin-right: 30px;
     cursor: pointer;
+
 }
 
 li:hover {
-    color: #f9004d;
+    color: #e2b9c6;
     transition: 0.5s;
 }
 
+
 .link-menu {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 16px;
+    color:#ffffff;
     text-decoration: none;
-    color: white;
+    position: relative;
+}
+
+.underline:after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    left: 0px;
+    position: absolute;
+    background-color: #e2b9c6;
+    transition: 0.3s ease;
+}
+
+.underline:hover:after {
+    width: 100%;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+.menu-mobile{
+    display: none;
+    
 }
 
 .meu-nome {
@@ -65,16 +97,6 @@ h1 {
 
 h1 span {
     color: #e2b9c6;
-}
-
-.btn-menu {
-    width: 70px;
-    height: 70px;
-    float: right;
-    text-align: center;
-    border-radius: 56px;
-    cursor: pointer;
-    background-color: #ffffff;
 }
 
 .meu-nome h3 {
@@ -233,3 +255,169 @@ footer p {
     transition: 0.5s;
 }
 
+@media screen and (max-width: 1102px) {
+
+    li{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+      
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+       
+    }
+    .menu-mobile li{
+        display: block;
+        color: #ddd;
+        margin-right: 10px;
+        margin-bottom: 4px;
+     
+    }
+    .menu-mobile li:last-child {
+        margin-bottom: 0; 
+    }
+
+
+    li:hover{
+        color: #faf8f9;
+        transition: 0.6s;
+        background-color: #e2b9c6;
+        transition: 1s;
+    }
+    .open{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 1505px){
+
+    .caixa-principal {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(46, 6, 6);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+    *{
+        overflow-x: hidden;
+    }
+
+    .caixa-principal h1{
+        font-size: 30px;
+        text-align: start;
+       
+    }
+    .caixa-principal h3{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .caixa-principal img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portfolio{
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .meu-nome {
+        
+        font-size: 10px;
+        text-align: start;
+        text-align: center;
+    }
+    .segunda-secao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 110vw;
+        
+    }
+    
+    section img {
+
+        width: 200px;
+        height: 200px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-left: -1px;
+    }
+
+    .informacoes-sobre-mim h2{
+       font-size: 26px;
+       margin-right: 45px;
+       
+    }
+    .informacoes-sobre-mim p{
+        font-size: 15px;
+        margin-bottom: 20px;
+        color: #e2b9c6;
+        margin-right: 45px;
+
+    }
+    .segunda-secao button{
+        margin-right: 46px;
+
+    }
+    
+    .projetos {
+        width: 100vw;
+    }
+    .projetos h2 {
+        font-size: 25px;
+    }
+    .card-projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 15px;
+    }
+    
+    .social{
+        display: flex;
+        gap: 45px;
+    }
+    .social a {
+        background-color: #f9004d;
+        border-radius: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;      
+    }  
+    .social img{
+        height: 30px;
+        
+    }
+    footer p{
+        align-items: center;
+    }
+}

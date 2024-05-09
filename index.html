@@ -8,23 +8,38 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <title>Jhennyfer Costa</title>
 </head>
 
 <body>
     <div class="caixa-principal" id="home">
-        <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button> 
-        <nav class="menu">
+        <nav>
             <h2 class="portfolio">Portifo<span>lio</span></h2>
-           <a class="btn-close">x</a>
+
             <ul>
-                <li><a class="link-menu" href="#home">Home</a></li>
-                <li><a class="link-menu" href="#sobre">Sobre</a></li>
-                <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
-                <li><a class="link-menu" href="#fale-comigo">Fale comigo</a></li>
+                <li><a class="link-menu underline" href="#home">Home</a></li>
+                <li><a class="link-menu underline" href="#sobre">Sobre</a></li>
+                <li><a class="link-menu underline" href="#projetos-id">Projetos</a></li>
+                <li><a class="link-menu underline" href="#fale-comigo">Fale comigo</a></li>
             </ul>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+
         </nav>
+
+        <div class="menu-mobile">
+            <ul>
+                
+                <li><a class="link-menu underline" href="#home">Home</a></li>
+                <li><a class="link-menu underline" href="#sobre">Sobre</a></li>
+                <li><a class="link-menu underline" href="#projetos-id">Projetos</a></li>
+                <li><a class="link-menu underline" href="#fale-comigo">Fale Comigo</a></li>
+            </ul>
+        </div>
 
         <div class="meu-nome">
             <h1>Jhennyfer <span>Costa</span></h1>
@@ -32,9 +47,9 @@
         </div>
     </div>
 
-    <section id="sobre">
-        <img src="./img/jhennyfer.jpg">
-        <div>
+    <section class="segunda-secao" id="sobre">
+        <img class="logo-nome" src="./img/jhennyfer.jpg">
+        <div class="informacoes-sobre-mim">
             <h2>Sobre mim</h2>
             <p>Olá! Estou iniciando na programação front-end em busca de oportunidades como programadora front-end junior. Tenho paixão por criar experiências digitais incríveis e estou constantemente buscando aprimorar minhas habilidades técnicas.
 
@@ -106,6 +121,10 @@
                 <img src="./img/github.png">
             </a>
         </div>
+        <br>
+        <br>
+        <p>&copy; 2024 Jhennyfer Costa<br></p>
+        <p> <span>Todos os direitos reservados</span></p>
 
     </footer>
 
