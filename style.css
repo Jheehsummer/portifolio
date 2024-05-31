@@ -131,14 +131,14 @@ section div p {
 }
 
 
-.contato a {
+section div a {
     color: white;
     background: #f9004d;
-    height: 70px;
+    height: 100px;
     width: 200px;
     font-size: 18px;
     border: none;
-    padding: 20px 35px;
+    padding: 30px 35px;
     border-radius: 26px;
     cursor: pointer; 
     padding: 15px 30px;
@@ -146,7 +146,7 @@ section div p {
     
 }
 
-.contato a:hover {
+section div a:hover {
     background-color: black;
     border: 3px solid #f9004d;
     transition: 0.5s;
@@ -360,8 +360,9 @@ footer p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        width: 100vw;   
+        height: 100vh;
+        gap: 20px;
+        
     }
     
     section img {
@@ -375,8 +376,8 @@ footer p {
     }
 
     .informacoes-sobre-mim h2 {
-       font-size: 20px;
-       margin-right: 45px; 
+        font-size: 20px;
+        margin-right: 45px; 
     }
 
     .informacoes-sobre-mim p {
