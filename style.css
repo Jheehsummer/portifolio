@@ -147,8 +147,6 @@ section div button:hover {
     transition: 0.5s;
 }
 
-
-
 .projetos {
     background-color: #191919;
     padding-top: 50px;
@@ -186,7 +184,7 @@ section div button:hover {
     margin-bottom: 40px;
 }
 
-.card, .contato a {
+.card a {
     background-color: #f9004d;
     color: white;
     padding: 10px 20px;
@@ -195,6 +193,15 @@ section div button:hover {
     transition: 0.5s;
     text-decoration: none;
 }
+
+.contato {
+    background-color: #f9004d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
 
 .card a:hover {
     background-color: transparent;
