@@ -148,6 +148,23 @@ section div a:hover {
     transition: 0.5s;
 }
 
+
+.contato a {
+    background-color: #f9004d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+
+.contato a:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
 .projetos {
     background-color: #191919;
     padding-top: 50px;
