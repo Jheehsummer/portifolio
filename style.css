@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    transition: 0.5s;
+    
 }
 
 .caixa-principal {
@@ -130,21 +130,33 @@ section div p {
     margin-bottom: 60px;
 }
 
+<<<<<<< HEAD
 section div a {
+=======
+.contato a {
+>>>>>>> e7c052670166c4965be36580071cee1be1a66e57
     color: white;
     background: #f9004d;
-    height: 50px;
-    width: 180px;
+    height: 70px;
+    width: 200px;
     font-size: 18px;
     border: none;
-    border-radius: 26px;
+    padding: 20px 35px;
+    border-radius: 26px
     cursor: pointer;   
+<<<<<<< HEAD
     padding: 15px 30px;
     text-decoration: none;
     
 }
 
 section div a:hover {
+=======
+    text-decoration: none;
+}
+
+.contato a:hover {
+>>>>>>> e7c052670166c4965be36580071cee1be1a66e57
     background-color: black;
     border: 3px solid #f9004d;
     transition: 0.5s;
@@ -196,6 +208,7 @@ section div a:hover {
     transition: 0.5s;
     text-decoration: none;
 }
+
 
 .card a:hover {
     background-color: transparent;
