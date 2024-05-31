@@ -147,6 +147,11 @@ section div button:hover {
     transition: 0.5s;
 }
 
+.contato {
+    text-decoration: none;
+    }
+
+
 .projetos {
     background-color: #191919;
     padding-top: 50px;
