@@ -147,9 +147,6 @@ section div button:hover {
     transition: 0.5s;
 }
 
-.contato {
-    text-decoration: none;
-    }
 
 
 .projetos {
@@ -189,7 +186,7 @@ section div button:hover {
     margin-bottom: 40px;
 }
 
-.card a {
+.card, .contato a {
     background-color: #f9004d;
     color: white;
     padding: 10px 20px;
