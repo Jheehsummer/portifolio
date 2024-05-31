@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    transition: 0.5s;
+    
 }
 
 .caixa-principal {
@@ -130,7 +130,7 @@ section div p {
     margin-bottom: 60px;
 }
 
-section div button {
+section div a {
     color: white;
     background: #f9004d;
     height: 50px;
@@ -139,9 +139,10 @@ section div button {
     border: none;
     border-radius: 26px;
     cursor: pointer;   
+    text-decoration: none;
 }
 
-section div button:hover {
+section div a:hover {
     background-color: black;
     border: 3px solid #f9004d;
     transition: 0.5s;
@@ -194,14 +195,6 @@ section div button:hover {
     text-decoration: none;
 }
 
-.contato {
-    background-color: #f9004d;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
 
 .card a:hover {
     background-color: transparent;
